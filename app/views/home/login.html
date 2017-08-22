@@ -1,0 +1,83 @@
+<header></header>
+
+<section class="wrapper">
+    <div class="container">
+        <div id="loginbox" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <div class="panel-title">Sign In</div>
+                    <a id="fb-login" onclick="fb_login()" class="login_fb pull-right">
+                        <!-- href="hauth/login/Facebook" -->
+                        <!--<i class="fa fa-facebook"></i>Login with Facebook-->
+                        <img class="fb_login_img" src="theme/img/fb_icon.png">
+                    </a>
+                    <form id="fb_login_form" method="POST" action="home/SocialLogin">
+                        <input type="hidden" id="fb_first_name" name="personal[First_name]" value="">
+                        <input type="hidden" id="fb_last_name" name="personal[Last_name]" value="">
+                        <input type="hidden" id="fb_id" name="account[social_id]" value="">
+                        <input type="hidden" id="fb_gender" name="gender" value="">
+                        <input type="hidden" id="fb_email" name="email" value="">
+                    </form>
+                </div>
+                <div class="panel-body">
+
+
+                    <form name="loginform" role="form" ng-submit="home.login()" method="post" novalidate>
+                        <div ng-show="home.message" class="alert alert-danger errorMessage"></div>
+                        <div class="input-group pull-left">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                            <input id="username" ng-model="home.login.username" required type="text" class="form-control" name="username" value="" placeholder="Username or Email">
+                        </div>
+                        <div ng-show="loginform.username.$dirty && loginform.username.$error.required" class="alert alert-dismissable username_error_container customized_alert"
+                            id="customized_alert">
+                            <span class="alerttext username_error_message">Please enter username</span>
+                            <a class="close close_error" aria-label="close">&times;</a>
+                        </div>
+                        <div class="input-group pull-left">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                            <input id="password" ng-model="home.login.password" required type="password" class="form-control" name="password" value=""
+                                placeholder="Password">
+                        </div>
+                        <div ng-show="loginform.password.$dirty && loginform.password.$error.required" class="alert alert-dismissable password_error_container customized_alert"
+                            id="customized_alert">
+                            <span class="alerttext password_error_message">Please enter password</span>
+                            <a class="close close_error" aria-label="close">&times;</a>
+                        </div>
+                        <div class="input-group">
+                            <div class="checkbox">
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <label>
+      <a href="#!/forgot">Forgot password?</a>
+      </label>
+                        </div>
+                        <!-- Butto -->
+                        <div class="col-sm-12 no-padding">
+                            <button type="submit" ng-disabled="loginform.$invalid" class="btn btn-edit login pull-left space_left" value="">Login</button>
+                        </div>
+                    </form>
+
+                </div>
+                <div class="panel-footer">
+                    New User
+                    <a ng-href="#!/register">Registration</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12">
+                    <p style="color:#fff; text-align:center; font-size:13px;"><a style="text-decoration:underline; font-weight:bold;">Important Notice:</a> Please note that players
+                        of Assam, Orissa and Telangana are not allowed to play real money games as per recent changes in
+                        legislation. Such players violating the law do so at their own risk. Please read our Terms of Service
+                        carefully for further information.</p>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</section>
+<footer></footer>

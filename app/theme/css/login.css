@@ -1,0 +1,185 @@
+
+body{
+	width: 100%;
+	height: 100%;
+	background:url(../img/login_pages_bg.jpg);
+	font-family: 'Open Sans', sans-serif;
+}
+@font-face {
+    font-family: 'Glyphicons Halflings';
+    src: url(../fonts/glyphicons-halflings-regular.eot);
+    src: url(../fonts/glyphicons-halflings-regular.eot?#iefix) format('embedded-opentype'), url(../fonts/glyphicons-halflings-regular.woff) format('woff'), url(../fonts/glyphicons-halflings-regular.ttf) format('truetype'), url(../fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular) format('svg');
+}
+.mainbox{
+	margin-top:50px;
+   font-family: 'Open Sans', sans-serif
+	font-size: 100%; 	
+}
+.login_fb{
+margin-top:-26px;
+}
+.logo {
+	width: 180px;
+	padding-top: 3px;
+	margin-left: -15px;
+}
+.panel-info {
+	border-color: #000;
+    border-radius: 6px;
+    background-color: #2B2B2B;
+	color:#fff;
+}
+.form-control {
+	background: no-repeat;
+	border: 2px solid #535353;
+	background-color: #000;
+	height: 32px;
+	color: #aeaeae;
+}
+.alert-dismissable .close, .alert-dismissible .close {
+	position: relative;
+	top: -2px;
+	right: 7px;
+	color: #fff;
+}
+.close {
+	opacity: 10 !important;
+	color: #fff;
+}
+.no-padding {
+	padding-left: 0;
+}
+.btn.focus, .btn:focus, .btn:hover {
+	color: #fff;
+	text-decoration: none;
+}
+.top_header {
+	width: 100%;
+	min-height: 65px;
+	background-color: #000;
+	border-bottom: 1px solid #4c4c4c;
+}
+.glyphicon-user,
+.glyphicon-lock,
+.glyphicon-envelope{
+	color: #aeaeae;
+}
+
+.input-group-addon {
+	padding: 6px 12px;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1;
+	color: #555;
+	text-align: center;
+	background-color: #000;
+	border: 2px solid #535353;
+	border-radius: 4px;
+}
+a:focus, a:hover {
+    color: #23527c;
+    text-decoration: none;
+}
+#customized_alert,
+#customized_alert_gender {
+	text-align: center;
+	margin-bottom: 5px;
+	position: relative;
+	display: inline-block;
+	background-color: #f32937;
+	padding: 0;
+	width: 70%;
+	border-radius: 4px;
+	transition: 1s;
+	margin-top: -6%;
+	z-index: 100;
+	margin-right: 1%;
+}
+#customized_alert, .enable, .filter {
+	float: right;
+}
+.forgot_password{
+	float:right; 
+	font-size: 100%; 
+	position: relative; 
+	top: -25px;
+}
+.panel-info > .panel-heading {
+	border: none;
+	background-color: #b90103;
+	border-bottom: 1px solid #9b9b9b;
+}
+.panel-body{
+	padding-top:10px
+}
+.btn-edit {
+	color: #fff;
+	background-color: #a51619;
+	border-color: #a51619;
+	border-radius: 0;
+	font-size: 13px;
+	font-weight: bold;
+}
+.panel-heading {
+	padding: 10px 15px;
+	border-bottom: 1px solid transparent;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+}
+.panel-title {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 16px;
+	color:#fff;
+}
+.input-group{
+	/*margin-bottom: 10px;*/
+	margin-bottom: 5px;
+	/*float:left;*/
+	/*New added Width to Input Group*/
+	width:100%;
+}
+.form-group{
+	margin-top:10px
+}
+.border_top{
+	border-top: 1px solid#888; 
+	padding-top:15px; 
+}
+.checkbox{
+	margin-top:10px
+}
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 0px;
+    font-weight: 700;
+    padding: 0px 0px 0px 5px;
+}
+a {
+	color: #ffa800;
+	text-decoration: none;
+}
+.panel-footer {
+	padding: 10px 15px;
+	background: none;
+	border-top: 1px solid #4c4c4c;
+	border-bottom-right-radius: 3px;
+	border-bottom-left-radius: 3px;
+	font-weight: bold;
+}
+
+a:focus, a:hover {
+    color: #ffa800;
+    text-decoration: none;
+}
+.red-tooltip + .tooltip > .tooltip-inner {
+	background-color: #f00;
+	}
+.red-tooltip + .tooltip > .tooltip-arrow { 
+border-bottom-color:#f00; 
+}
+
+.fb_login_img{
+	width:104px;
+}

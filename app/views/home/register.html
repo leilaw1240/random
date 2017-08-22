@@ -1,0 +1,896 @@
+<header></header>
+<section class="wrapper">
+    <div class="container">
+        <div id="signupbox" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+            <form id="userRegistration" class="form-horizontal" role="form" method="POST" novalidate="novalidate">
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                        <div class="panel-title">Sign Up</div>
+                    </div>
+                    <div class="panel-body">
+                        <div class="alert alert-danger errorMessage" style="display:none;"></div>
+
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                            <input id="username" type="text" class="form-control" name="username" value="" placeholder="Enter Username">
+                        </div>
+
+                        <div class="alert alert-dismissable username_error_container customized_alert" id="customized_alert" style="display: none;">
+                            <span class="alerttext username_error_message"></span>
+                            <a class="close close_error" aria-label="close" data-original-title="" title="">×</a>
+                        </div>
+
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                            <input id="emailid" type="email" class="form-control" name="emailid" placeholder="Enter Email Address">
+                        </div>
+
+                        <div class="alert alert-dismissable emailid_error_container customized_alert" id="customized_alert" style="display: none;">
+                            <span class="alerttext emailid_error_message"></span>
+                            <a class="close close_error" aria-label="close" data-original-title="" title="">×</a>
+                        </div>
+
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                            <input id="password" type="password" class="form-control" name="password" placeholder="Enter Password">
+                        </div>
+
+                        <div class="alert alert-dismissable password_error_container customized_alert" id="customized_alert" style="display: none;">
+                            <span class="alerttext password_error_message"></span>
+                            <a class="close close_error" aria-label="close" data-original-title="" title="">×</a>
+                        </div>
+
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                            <input id="confirm_password" type="password" class="form-control" name="confirm_password" placeholder="Confirm Password">
+                        </div>
+
+                        <div class="alert alert-dismissable confirm_password_error_container customized_alert" id="customized_alert" style="display: none;">
+                            <span class="alerttext confirm_password_error_message"></span>
+                            <a class="close close_error" aria-label="close" data-original-title="" title="">×</a>
+                        </div>
+
+                        <div class="input-group">
+                            <label>Gender</label>
+                            <label>
+                        <input type="radio" checked="true" name="gender" value="M" id="male" class="css-checkbox"> Male
+                    </label>
+                            <label>
+                        <input type="radio" name="gender" value="F" id="Female" class="css-checkbox"> Female
+                    </label>
+
+                        </div>
+
+                        <div class="alert alert-dismissable gender_error_container customized_alert" id="customized_alert" style="display: none;">
+                            <span class="alerttext gender_error_message"></span>
+                            <a class="close close_error" aria-label="close" data-original-title="" title="">×</a>
+                        </div>
+
+                        <div class="form-group">
+                            <!-- Button -->
+                            <div class="col-md-3">
+                                <img id="captchImage" src="theme/captcha/1503323554.3379.jpg" alt="captcha image">
+                            </div>
+
+                            <div class="col-md-3 text-center" id="reloadCaptch">
+                                <a class="captch-reload" title="" data-original-title="Captcha verification">
+                            <img alt="Captcha Reload Icon" title="Captcha Reload Icon" src="theme/img/captcha-reload-icon.png">
+                        </a>
+                            </div>
+                            <div class="col-md-6">
+                                <input name="regcaptcha" id="regcaptcha" placeholder="Enter code" class="form-control captcha-input-reg-popup" value="" type="text">
+                            </div>
+
+                            <div class="alert alert-dismissable regcaptcha_error_container customized_alert" id="customized_alert" style="display: none;">
+                                <span class="alerttext regcaptcha_error_message"></span>
+                                <a class="close close_error" aria-label="close" data-original-title="" title="">×</a>
+                            </div>
+                        </div>
+
+
+
+                        <div class="input-group">
+                            <div class="checkbox" style="padding-top: 0px;">
+                                <label data-toggle="modal" data-target="#myModal_terms">
+                            <input id="terms" type="checkbox" name="remember" value="1" checked="true" disabled=""> Terms of Services
+                        </label>
+                                <label data-toggle="modal" data-target="#myModal_policy">
+                            <input id="privacy" type="checkbox" name="remember" value="1" checked="true" disabled=""> Privacy&amp;Policy
+                        </label>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="panel-footer text-right">
+                        <!-- Button -->
+
+
+
+
+
+
+                        <input type="hidden" name="register_type" value="1">
+                        <input type="hidden" name="device_id" value="">
+                        <button id="btn-signup" type="submit" class="btn  btn-edit login">Register for free</button>
+                        <a class="" ng-href="#!/" data-original-title="" title="">
+                    <button id="btn-signup" type="button" class="btn  btn-edit login">Login</button>
+                </a>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12">
+                    <p style="color:#fff; text-align:center; font-size:13px;"><a style="text-decoration:underline; font-weight:bold;" data-original-title="" title="">Important Notice:</a>                        Please note that players of Assam, Orissa and Telangana are not allowed to play real money games
+                        as per recent changes in legislation. Such players violating the law do so at their own risk. Please
+                        read our Terms of Service carefully for further information.</p>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            reloadcaptcha();
+
+        </script>
+        <div class="modal fade" id="myModal_terms" role="dialog">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" style="color: #000;">×</button>
+                        <h4 class="modal-title"> Terms of Services</h4>
+                    </div>
+                    <div class="modal-body" style="height:680px;overflow:auto;overflow-x:hidden;">
+                        <div class="row">
+
+                            <div class="col-xs-12">
+                                <h4 class="text-center">IMPORTANT NOTIFICATION</h4>
+                                <ul type="square" class="ul_pad_left">
+                                    <li>As per recent changes made to the Telangana State Gaming Act 1974, online Card Games
+                                        for cash has been banned in the State of Telangana. In compliance with the Ordinance
+                                        we have made changes to our services and have stopped offering online rummy game
+                                        for cash in Telangana.</li>
+                                </ul>
+                            </div>
+                            <div class="col-xs-12">
+                                <h4 class="text-center">DEFINITIONS AND GETTING STARTED</h4>
+                                <ul type="square" class="ul_pad_left">
+                                    <li>The terms of use are an agreement between Wyz Games India Private Limited and all its
+                                        subsidiaries, from here on referred to as the “company” (the company could also be
+                                        referred to as “we”, “us”, “our” and other such adjectives), including its website
+                                        www.PokaBunga.com, from here on is referred to as the “website” and you from here
+                                        on will be referred as “you”, “your”, “user” or “player”.</li>
+                                    <li>The agreement must be read by you (user) completely and well understood before you agree
+                                        to the terms of use governing any and all relationships, in this agreement and terms
+                                        of services, products or information and their usage, from here on are referred to
+                                        as “Terms and conditions”. The user should read, understand and agree to the terms
+                                        of use which includes those terms and conditions expressly set out below and those
+                                        incorporated by reference, which you can access by clicking on the relevant link.</li>
+                                </ul>
+                            </div>
+                            <div class="col-xs-12">
+                                <h4 class="text-center">DEFINITION OF "MEMBERSHIP"</h4>
+                                <ul type="square" class="ul_pad_left">
+                                    <li>The Website and its membership are strictly private and in no way should be considered
+                                        to be public. In order to gain membership to the website enabling the user to play
+                                        the games offered/ use the software or any other product or services offered by the
+                                        website, company or its associates, they will have to first register themselves with
+                                        the website.</li>
+                                    <li>The registration does not guarantee membership, only after the company or its representatives
+                                        deem fit by their own subjective judgement will they grant membership informing you
+                                        of the same by sending you an e-mail.</li>
+                                    <li>The right to grant membership is completely reserved by the company / website and its
+                                        representatives. Such membership can be terminated by giving instant notice for any
+                                        subjective reason that they deem fit and by agreeing to the terms of use the user
+                                        grants its consent for the same.</li>
+                                    <li>The server where the software is installed and the games hosted will be placed in a strictly
+                                        non-public / confidential area where the access to the server is completely restricted
+                                        both physically and virtually. Any person/persons or group that will be authorized
+                                        to access the server where the games are held are not allowed to register themselves
+                                        as users, thus, not allowed to become members. Such people are not allowed to use
+                                        the software / play games or use any other product or service provided by the company.
+                                        This is in the interests of promoting fair play.</li>
+                                    <li>Our services and products are not available to anybody under the age of 18 on the day
+                                        of them applying for membership through the registration process on the site. Also,
+                                        it is strictly prohibited for any user under the age of 18 to play games on our website.
+                                        We reserve the right to request proof of age at any stage to verify that minors are
+                                        not using the service and we may exclude a person from play if proof of age is not
+                                        provided or if the company suspects that a person using the service is under-age.
+                                        The services and products are not intended for users connecting to the site from
+                                        jurisdictions that say it is illegal to do so.</li>
+                                </ul>
+                            </div>
+                            <div class="col-xs-12">
+                                <h4 class="text-center">SERVICES NOT OFFERED IN TELANGANA, ASSAM AND ORISSA</h4>
+                                <ul type="square" class="ul_pad_left">
+                                    <li>The applicable laws in the state of Telangana, Assam and Orissa may prohibit a player
+                                        from using the services offered on our website. There may be applicable penalties
+                                        imposed on such user by the respective state governments or the central government
+                                        of India as the case may be.</li>
+                                    <li>Our company and its website don’t accept membership request from people who are residing
+                                        in these states and if a user residing in such state becomes a member of the site
+                                        by giving false information, the liability will be solely on the user and the company
+                                        reserves the right to terminate the user's membership without any notice and confiscate
+                                        all his deposit and winnings as the case might be.</li>
+                                    <li>You accept that PokaBunga.com or Wyz Games India Private Limited will not be liable to
+                                        take any responsibility for the breach of the user of applicable state laws. Users
+                                        from all states have to always ensure that they are following the applicable state
+                                        laws and we will try to post any changes that we seem appropriate to better educate
+                                        the users. Our decision in this regard will be final and no consideration whatsoever
+                                        will be extended to the user.</li>
+
+                                </ul>
+                            </div>
+                            <div class="col-xs-12">
+                                <h4 class="text-center">SHARING OF PASSWORD AND OTHER PLAYER RESPONSIBILITIES</h4>
+                                <ul type="square" class="ul_pad_left">
+                                    <li>Sharing or distribution of the password with any other user/ person/ group or any third
+                                        party is strictly prohibited. PokaBunga.com is not responsible if your account is
+                                        accessed or opened by others using your password. You are held legally responsible
+                                        and liable for all of your activities on the website made from your account.</li>
+                                    <li>The players admit that they may be exposed to content posted by other users which they
+                                        may find offensive, obnoxious or indecent and that the website may not be able to
+                                        prevent such content being posted. Such content should be brought to the notice of
+                                        the website. The website shall act upon the information as it deems acceptable.</li>
+                                    <li>The players admit that they may be exposed to content posted by other users which they
+                                        may find offensive, obnoxious or indecent and that the website may not be able to
+                                        prevent such content being posted. Such content should be brought to the notice of
+                                        the website. The website shall act upon the information as it deems acceptable.</li>
+                                    <li>The decision taken by the management of the company or the website in this regard shall
+                                        be final and binding on the player and the player specifically agrees that PokaBunga.com
+                                        will not incur any liability under any circumstance whatsoever regarding the same.
+                                        You understand that it is your obligation to protect the information you have provided
+                                        on the website including, but not limited, to usernames, passwords, email addresses,
+                                        contact details, and telephone numbers.</li>
+                                    <li>You explicitly understand and agree that we will not incur any liability for information
+                                        provided by you to anyone which may result in your account on the website being exposed
+                                        or misused by any other person or any other harm or loss being suffered by you. You
+                                        are accountable to obey any applicable law, while taking part in any competition
+                                        or tournament organized through the website. You undertake and agree to assure us
+                                        against any claims, expenses or liabilities suffered by or claimed against us by
+                                        any person or entity arising out of your non-compliance with any applicable laws.</li>
+                                    <li>You also understand and accept that your mere participation in a game/ tournament available
+                                        on the website does not create any obligation on us to give you a prize. Your winning
+                                        a prize is entirely dependent on your skill as a player same as other players in
+                                        the game/tournament and subject to the rules of the game/ tournament. You acknowledge
+                                        that your participation in any game/tournament available on the website is purely
+                                        voluntary and is at your sole discretion and risk.</li>
+                                    <li>You understand and acknowledge that once a game/tournament has commenced, not being able
+                                        to play due to slow internet connections, faulty hardware, internet connection failure,
+                                        low computer configuration or for some other reason does not attributable to us to
+                                        a refund of the entry fee you may have paid for participation. You agree, understand
+                                        and acknowledge that you will use your account with us solely for the purpose of
+                                        playing on the website and for any other transactions with us which you may have
+                                        to carry out with respect to your usage of the services.</li>
+                                    <li>You understand and acknowledge the fact that we are neither a bank nor a financial institution
+                                        and that the purchases/balance standing to the credit in your account do not accumulate
+                                        any interest. You also understand and agree that your account maintained by us is
+                                        purely for the purpose of payment of the entry/subscription fee to participate in
+                                        games/tournaments made available on the website and for purchase of cash prizes that
+                                        you may win.</li>
+                                    <li>You also agree that you are required to furnish your PAN (Permanent Account Number) duly
+                                        issued to you by the Income Tax Department, Government of India, as the case may
+                                        be, to deduct TDS as per the rules and regulations of the government of India. You
+                                        acknowledge that you are making use of the services knowing that you may face a risk
+                                        of monetary loss, when using the services and that PokaBunga.com shall have no responsibility
+                                        to you for any such loss that arises in the course of your participation in the services.</li>
+                                    <li>You may not impersonate another person or user, attempt to get a password, other account
+                                        information, or other private information from a user, or harvest email addresses
+                                        or other information. In the event, we have reasonable grounds to believe that your
+                                        activities include any of the acts specified above, We may initiate appropriate legal
+                                        proceedings against you as well as notifying the relevant regulatory or law enforcement
+                                        authorities where appropriate, apart from suspending or terminating your privileges
+                                        for the use of the website.</li>
+                                    <li>You may not purchase, sell, trade, rent, lease, license, grant a security interest in,
+                                        or transfer your user account, any content, currency, points, standings, rankings,
+                                        ratings, or any other attributes appearing in, originating from or associated with
+                                        the Website or by using any Services.</li>
+
+                                </ul>
+                            </div>
+                            <div class="col-xs-12">
+                                <h4 class="text-center">INTELLECTUAL PROPERTY</h4>
+                                <ul type="square" class="ul_pad_left">
+                                    <li>Wyz Games India Private Limited holds all rights tangible or intangible for the website
+                                        and all the services offered on the website including but not limited to all games
+                                        and other content , promotional material, entered all strategic and development plans,
+                                        ideas , designs, financial conditions, business plans, data banks, information related
+                                        to technology and process, the technology development including the software and
+                                        methodology of usage from here on referred to as “intellectual Property” .</li>
+                                    <li>The company is only permitted the user to use the Intellectual property to play the games
+                                        and use other services offered and under all circumstances the user is strictly prohibited
+                                        to use the intellectual capital otherwise, which includes but is not limited to copying,
+                                        reproducing or transmitting any media known to / or will be known to humankind of
+                                        the intellectual property. The user is not being granted any rights whatsoever with
+                                        respect to the intellectual property by allowing him to play games on the website
+                                        and use other services on the website.</li>
+                                </ul>
+                            </div>
+                            <div class="col-xs-12">
+                                <h4 class="text-center">DESCRIPTION OF SERVICES OFFERED</h4>
+                                <ul type="square" class="ul_pad_left">
+                                    <li>Wyz Games India Private Limited is a technology company which through its website PokaBunga.com
+                                        aims at providing technology and IT services to enable online multiplayer gaming
+                                        in real time.</li>
+                                    <li>Besides providing technology and IT services to enable online games of skill, the company
+                                        will also create software and technology to enable play of game of skills on multiple
+                                        technology platform, real time or otherwise .Such technology will not be sold, but
+                                        the users will be allowed to use it at the sole discretion of the Wyz Games India
+                                        Private Limited.</li>
+                                    <li>The services provided by the website are only intended to play with skill and for entertainment
+                                        purpose only. The company is not responsible for any betting or gambling acts that
+                                        may take place outside the website.</li>
+                                    <li>Wyz Games India Private Limited will charge the users for providing such services. A
+                                        service tax is applicable for the services and the service charge collected at the
+                                        beginning of each game will include the service tax and other taxes and charges as
+                                        applicable.</li>
+                                    <li>The service charge levied is subject to change from time to time and the users will be
+                                        informed accordingly by answering to such specific request from customer care. We
+                                        reserve the right to collect service charge at varying rates and at different times
+                                        and for multiple types of games and other services offered by us. The service charge
+                                        and applicable taxes may vary as per the changes in the law and we may change the
+                                        levy of service charge accordingly based on the company’s discretion.</li>
+                                </ul>
+                            </div>
+                            <div class="col-xs-12">
+                                <h4 class="text-center">SOFTWARE USAGE</h4>
+                                <ul type="square" class="ul_pad_left">
+                                    <li>Commercial use of the Software is strictly forbidden. The User is only allowed to use
+                                        the Software for his/her personal use. Under no circumstances shall a User be permitted
+                                        to use his/her account with Wyz Games India Private Limited for any purpose other
+                                        than for playing the Games.</li>
+                                    <li>You may open only one account per person. Wyz Games India Private Limited reserves the
+                                        right to monitor any effort to establish multiple accounts; in the event Wyz Games
+                                        India Private Limited discovers that you have opened more than one account per person,
+                                        all additional accounts will be closed immediately without notice and continued violation
+                                        will result in the termination of any and all of your accounts and Wyz Games India
+                                        Private Limited may void any associated winnings.</li>
+                                    <li>The user may not attempt to modify, decompile, reverse-engineer or disassemble the software
+                                        in any way. The use of artificial intelligence including, without limitation, "robots"
+                                        is strictly forbidden in connection with the Software and the Games. All actions
+                                        taken in relation to the Games by a User must be executed personally by the User
+                                        through the user interface accessible by use of the Software.</li>
+                                    <li>You agree that Wyz Games India Private Limited may take steps to detect and prevent the
+                                        use of prohibited EPA Programs. Such action may include, but is not limited to, the
+                                        examination of software programs running concurrently with the Wyz Games India Private
+                                        Limited Software on the User's computer.</li>
+
+
+                                </ul>
+                            </div>
+                            <div class="col-xs-12">
+                                <h4 class="text-center">FAIRPLAY AND PREVENTION OF COLLUSION AND FRAUD</h4>
+                                <ul type="square" class="ul_pad_left">
+                                    <li>All necessary steps have been taken in order to ensure fair play on the website. We will
+                                        prevent you from colluding with other players in order to win/lose. When you agree
+                                        to the terms and conditions mentioned here, you agree that you will not play any
+                                        game in partnership or by communicating with other players which may benefit you
+                                        over other players.</li>
+                                    <li>If the company finds any player holding more than one id, colluding or participating
+                                        in any kind of fraudulent activity please note that the management has all the rights
+                                        to block the account and the amount in the account of the player without any prior
+                                        intimation. The company holds all rights to take any kind of corrective action or
+                                        impose penalties as deemed fit. </li>
+                                    <li>In case a player is found involved in such activities, Wyz Games India Pvt Limited has
+                                        the right to withhold all the funds in the player's account and to cancel and close
+                                        the account without any prior communication to the player.</li>
+
+                                </ul>
+                            </div>
+                            <div class="col-xs-12">
+                                <h4 class="text-center">ELECTRONIC SERVICE PROVIDER</h4>
+                                <ul type="square" class="ul_pad_left">
+                                    <li>When you use our Services, you will be required to do to and fro money transactions.
+                                        To process such financial transactions, we may use third-party electronic payment
+                                        processors or service providers (ESPs). As required, you permanently authorize us
+                                        to instruct such ESPs to handle Account deposits and withdrawals from your account.</li>
+                                    <li>You also permanently agree that in accordance with your requests as submitted, we may
+                                        give such instructions on your behalf. You agree to be certain of the terms and conditions
+                                        of use of each appropriate ESP. In the event of conflict between these Agreements
+                                        and the ESP's terms and conditions, these Agreements shall prevail.</li>
+                                </ul>
+                            </div>
+                            <div class="col-xs-12">
+                                <h4 class="text-center">SOFTWARE SERVICE CHARGES RULES</h4>
+                                <ul type="square" class="ul_pad_left">
+                                    <li>Pokabunga.com charges a percentage of the Game value, i.e the total amount of winnings
+                                        on the table in each deal towards it service fee. This service fee, called rake,
+                                        varies across each table based on the point value of the tables, average pot size,
+                                        number of players etc. Pokabunga researves the right to charge the service fee charged
+                                        on any table without any prior intimation to its players at its sole discretion.</li>
+                                    <li>PokaBunga.com is a safe and secure website and believes in . Hence kindly find the detailed
+                                        information about the house cut fees (software service charges) for poker and Rummy
+                                        below.</li>
+                                    <h5 class="text-left">Poker Games</h5>
+                                    <ul type="square" class="ul_pad_left">
+                                        <li>PokaBunga has designed a unique rake system for all its players.</li>
+                                        <li>The Rake system has been designed in a way that each player makes the most of playing
+                                            on pokabunga.com</li>
+                                        <li>Our Rake system varies from 6% to 3.5% depending on the table stakes.</li>
+                                        <li>We have also made sure that there is a Maximum cap for each table in order to make
+                                            the players game play even more rewarding and exciting.</li>
+                                        <li>Please find below the Rake Structure based on Number of players (table size) and
+                                            different stakes.</li>
+                                        <li>In case of a Poker Game, the software service charges collected shall depend on the
+                                            table size and the stakes.</li>
+                                        <li>The software service charge amount shall be collected at the end of every game during
+                                            the announcement of the winner and the balance amount shall be credited to the
+                                            winner’s account.</li>
+                                    </ul>
+                                    <h5 class="text-left">Rummy Games</h5>
+                                    <ul type="square" class="ul_pad_left">
+                                        <li>In case of Rummy Game, the software service charges collected will be equal to 12-15%
+                                            (including Taxes) of the winning amount which has been won by the winner of a
+                                            particular game</li>
+                                        <li>For instance, if the winner wins an amount of Rs. 200, Rs. 24 chips will be deducted
+                                            as the software service charge amount and the balance amount of Rs. 176 would
+                                            be credited to the account of the particular winner</li>
+                                        <li>The software service charge amount shall be collected at the end of every game during
+                                            the announcement of the winner and the balance amount shall be credited to the
+                                            winner’s account.</li>
+                                        <li>We have also made sure that there is a Maximum cap for each table in order to make
+                                            the players game play even more rewarding and exciting.</li>
+                                        <li>Please find below the Rake Structure based on Number of players (table size) and
+                                            different stakes.</li>
+                                        <li>In case of a Poker Game, the software service charges collected shall depend on the
+                                            table size and the stakes.</li>
+                                        <li>The software service charge amount shall be collected at the end of every game during
+                                            the announcement of the winner and the balance amount shall be credited to the
+                                            winner’s account.</li>
+                                    </ul>
+                                    <h5 class="text-left">In Case of Multiple Winners</h5>
+                                    <ul type="square" class="ul_pad_left">
+                                        <li>If in particular game there is more than 1 winner, the software service charges rules
+                                            for that game will be the same and software service charges for Rummy and the
+                                            percentage as per designed Rake Structure for Poker would be charged and deducted
+                                            from the winner’s winning amount.</li>
+                                        <li>
+                                        </li>
+                                    </ul>
+                                    <h5 class="text-left">In Case of Joint Winners</h5>
+                                    <ul type="square" class="ul_pad_left">
+                                        <li>If in a particular game, there are joint winners who simultaneously win a particular
+                                            game the software service charges rules for Rummy and the percentage as per designed
+                                            Rake Structure for Poker will be collected in the proportion of respective joint
+                                            winners.</li>
+                                        <li>
+                                        </li>
+                                        <li>Note: If the software service charge is in decimal fraction, it will be rounded off
+                                            to the nearest integer.</li>
+                                    </ul>
+                                </ul>
+                            </div>
+                            <div class="col-xs-12">
+                                <h4 class="text-center">REFUNDS AND CANCELLATIONS</h4>
+                                <ul type="square" class="ul_pad_left">
+                                    <li>Any real money in your account is your actual account balance. Any winnings would be
+                                        added and/or losses incurred from using the services, entry or other fees, previously
+                                        withdrawn money by the User or amount forfeited by us for any suspected fraud or
+                                        rejection or cancellation of transaction(s) by your or any third party bank, resulting
+                                        of charge-backs, insufficient funds or any other reason would subsequently be subtracted.
+                                        Also levied would be the Inactive Account Fees.</li>
+                                    <li>A cash-out request will be accepted when catered to deposit method restrictions, bonus
+                                        restrictions and/or Security Reviews. You can withdraw amounts only within your transaction
+                                        limits and levying any processing fees for withdrawal methods that we notify you
+                                        of before cashing out.</li>
+                                    <li>User can request for a refund anytime online. With Wyz Games India Private Limited, the
+                                        user account will be checked for any games played or bonus claims and the request
+                                        will be processed within 2 weeks. The bonus amount of any bonus claims will be deducted
+                                        and the balance refunded. A request for cancellation of any transaction would be
+                                        processed within 2 weeks given the player has the balance of the transaction in his/her
+                                        account.</li>
+                                    <li>Any amount from your winnings may be reported and withheld complying with any applicable
+                                        law. It is solely your responsibility to deal with all the taxes involved with your
+                                        winnings. Neither prize money nor balance can be redeemed for any other prize nor
+                                        can it be transferred. When withdrawing, payment will be made to you either by cheque
+                                        or bank transfer</li>
+                                    <li>Although payment processing will be made as soon as possible, due to our Security Reviews,
+                                        payments may be delayed and withheld by us.</li>
+                                </ul>
+                            </div>
+                            <div class="col-xs-12">
+                                <h4 class="text-center">THIRD PARTY CONTENT</h4>
+                                <ul type="square" class="ul_pad_left">
+                                    <li>Wyz Games India Private Limited will not stand the use of any abusive or offensive language
+                                        on our chat boards or any other platforms. Also, you are not allowed to make false
+                                        or damaging comments with regard to the company in any media or forum.</li>
+                                    <li>We hold the right to reject or delete any text, files, images, photos, video, sounds,
+                                        or any other material that breaches the terms in accordance with our third party
+                                        content policy posted by you on any platform.</li>
+                                    <li>Any violation may result in removal of the third party Content, a suspension of your
+                                        use of the Services and/or any suitable action as may be required by us to ensure
+                                        the agreement.</li>
+                                </ul>
+                            </div>
+                            <div class="col-xs-12">
+                                <h4 class="text-center">DISCONNECTIONS AND TECHNICAL ISSUES</h4>
+                                <ul type="square" class="ul_pad_left">
+                                    <li>In case of any technical failures, server crashes, breakdowns, software defects, disruption
+                                        or malfunction of service, as a policy, Wyz Games India Private Limited will cancel
+                                        the games and refund the bet amounts after proper verification and no rake will be
+                                        taken from such games and you accept that Wyz Games India Private Limited is not
+                                        responsible to you in all such cases. Wyz Games India Private Limited is also not
+                                        liable for any prospective winnings from any incomplete tournament.</li>
+                                    <li>Wyz Games India Private Limited does not hold any liability to any disconnection, lag,
+                                        freeze or interference in network on the user’s computer or any other external networks.
+                                        In case of any disruption for an on-going game, the game will be manually cancelled
+                                        by Wyz Games India Private Limited and the points/chips shall be refunded irrespective
+                                        of the status of the game</li>
+                                    <li>For any game, Wyz Games India Private Limited has the right to cancel and refund the
+                                        points/chips. In no case, other than a server crash, Wyz Games India Private Limited
+                                        does not take into account for any of player's disconnections from the server.</li>
+                                </ul>
+                            </div>
+                            <div class="col-xs-12">
+                                <h4 class="text-center">DISCLAIMERS AND INDEMNIFICATION</h4>
+                                <ul type="square" class="ul_pad_left">
+                                    <li>By registering, you are considered to have accepted and understood all the Terms and
+                                        conditions. We recommend that you keep a copy of all transactions, rules of playing,
+                                        cancellation and payment policies. Our failure or delay to act or exercise any right
+                                        or remedy with respect to a breach of any of these Terms and conditions by you does
+                                        not surrender Our rights to act with respect to any prior, concurrent, subsequent
+                                        or similar breaches.</li>
+                                    <li>Any competition or tournament organized by us on the Website shall be governed by these
+                                        Terms and conditions and any additional terms and conditions which may be explicitly
+                                        defined for a competition or tournament.</li>
+                                    <li>The company and/or its website and/ solely reserve the right to singly change the terms
+                                        and conditions and update the same on the website. It is the user’s responsibility
+                                        to check the updated terms and conditions on a regular basis and to decide whether
+                                        to continue his membership on this website or not. At any point of time you may choose
+                                        to discontinue the use of our website or any services offered by the company.</li>
+                                    <li>If you continue to use the Service/product or the Software, you will be responsible for
+                                        your acceptance of the changes to this Agreement. If any judicial or quasi-judicial
+                                        body in India declares any of these Terms or condition to be unlawful, invalid, void
+                                        or unenforceable for any reason, the validity and enforceability of the remaining
+                                        Terms and conditions will not be affected. Any such inappropriate Term or condition
+                                        will be replaced by another term that is valid and enforceable and is in most nearly
+                                        with effect to the original invalid term.</li>
+                                    <li>By agreeing to the terms of use you agree to the fact that the information you have provided
+                                        to the company, website or affiliate on our website and its affiliates, will be used
+                                        by the company and its affiliates as considered appropriate. Our methods of gathering
+                                        information may change from time to time and our privacy policy may be modified too.
+                                        These changes will be posted on this page. You can always understand the information
+                                        we collect, how we use it, and under what circumstances we disclose it.</li>
+                                </ul>
+                            </div>
+                            <div class="col-xs-12">
+                                <h4 class="text-center">WARRANTY</h4>
+                                <ul type="square" class="ul_pad_left">
+                                    <li>The company disclaims any and all warranties, expressed or implied, in connection with
+                                        the software, the site and the games, all of which are provided to the user "AS IS".
+                                        You access and use the website at your sole risk. The Company explicitly disclaims
+                                        all warranties or conditions of any kind, express, implied or statutory, including
+                                        without limitation the implied warranties of title, non-infringement, merchantability,
+                                        and fitness for a particular purpose.</li>
+                                    <li>Without limiting the foregoing, the company does not represent or warrant,</li>
+                                    <li>The quality, fitness for purpose, completeness, merchantability, non-infringement or
+                                        accuracy of the software, the site and the games</li>
+                                    <li>The suitability of the information contained in the documents or other information published
+                                        on this site,</li>
+                                    <li>Continuous, error-free, secure or virus-free operation of PokaBunga.com or its content
+                                        including software, games, your account or continued operation or availability of
+                                        any facility on PokaBunga.com,</li>
+                                    <li>That the defects in the website will be corrected,</li>
+                                    <li>That the website or the servers that operate the website are free of viruses or other
+                                        harmful components,</li>
+                                    <li>That the data, results and information within the website will be correct, accurate,
+                                        adequate, useful, reliable or otherwise and</li>
+                                    <li>That the website will meet your needs, requirements or expectations.</li>
+                                    <li>No person affiliated, or claiming affiliation with the Site has authority to extend such
+                                        Warranties.</li>
+                                </ul>
+                            </div>
+                            <div class="col-xs-12">
+                                <h4 class="text-center">You undertake and agree as under</h4>
+                                <ul type="square" class="ul_pad_left">
+                                    <li>The Company does not promise or ensure that you will be able to access your account whenever
+                                        you want. It is entirely possible that you may not be able to access your account
+                                        or the Services provided by the Company at times or for extended periods of time
+                                        due to, but not limited to system maintenance and updates.</li>
+                                    <li>You are aware that participation in the games of skill organized by us may result in
+                                        financial loss to you. With full knowledge of the facts and circumstances surrounding
+                                        the activity, you are voluntarily participating in the activity and assume all responsibility
+                                        for it and risk resulting from your participation, including all risks of financial
+                                        loss. The Company makes no guarantees, warranties, representations, or other promises
+                                        relative to the activity, and assumes no liability or responsibility for any financial
+                                        loss that you may sustain as a result of participation in the activity.</li>
+                                    <li>You agree to indemnify and hold the company, its employees, directors, officers, and
+                                        agents harmless with respect to any and all claims and costs associated with your
+                                        participation in the activity. You acknowledge that you are solely responsible for
+                                        any action that arises from your participation in this activity or around this activity,
+                                        regardless of occurring before, during or after the period of the activity.</li>
+                                    <li>To hereby save, hold harmless, discharge and release the company from any and all liability,
+                                        claims, causes of actions, damages or demands of any kind and nature, whatsoever,
+                                        that may arise from or in connection with your participation in the activity.</li>
+                                    <li>You will be solely responsible for any delay and/or damage to your computer systems or
+                                        loss of data that results from installation of website games or software on your
+                                        computer and the website expressly disclaims liability for any such failure delay
+                                        or failure.</li>
+                                    <li>You are solely responsible for maintaining the confidentiality of your account access
+                                        credentials (i.e. Username &amp; password) and financial instruments (i.e. Credit/Debit
+                                        card number).</li>
+                                    <li>You agree to assume the entire risk as to the results and performance of any software
+                                        and/or games availed by you on www.PokaBunga.com. As such, the result and performance
+                                        among other things depends on your Internet connection and hardware. You also assume
+                                        the entire cost of all servicing, repair and/or correction of your hardware when
+                                        you access, download or execute software or games available on www.PokaBunga.com.
+                                        The Company explicitly disclaims liability for any delay or failure to perform resulting
+                                        from installation of its games or software on your computer.</li>
+                                    <li>You specifically acknowledge, agree and accept that we are not liable to you for:</li>
+                                    <li>The defamatory, offensive or illegal conduct of any other player or for anything that
+                                        turns out to be misleading, inaccurate, defamatory, threatening, obscene or otherwise
+                                        illegal whether originating from another player or otherwise.</li>
+                                    <li>Any loss whatsoever arising from the use, abuse or misuse of your account on our Website.</li>
+                                    <li>Any loss incurred in transmitting information from you to our Website by the internet
+                                        or by other connecting media</li>
+                                    <li>Any technical failures, system breakdowns, defects, delays, interruptions, manipulated
+                                        or improper data transmission, loss or corruption of data or communications' lines
+                                        failure, distributed denial of service attacks, viruses or any other adverse technological
+                                        occurrences arising in connection with your access to or use of our Website.</li>
+                                    <li>The accuracy, completeness or currency of any information services provided or any statistics
+                                        shown on the Website.</li>
+                                    <li>You agree to indemnify, defend and hold the Company, harmless from all claims, damages
+                                        and expenses made by any third party arising out of:</li>
+                                    <li>Your content, or</li>
+                                    <li>Your violation of these Terms or Privacy Policy, or</li>
+                                    <li>Use of www.PokaBunga.com by any other person accessing the Services using your username
+                                        or password, whether or not with your authorization.</li>
+                                    <li>The Company reserves the right to change, modify or delete the sites, information, and
+                                        terms &amp; conditions listed on this site at any time without prior notice.</li>
+                                </ul>
+                            </div>
+                            <div class="col-xs-12">
+                                <h4 class="text-center">LIMITATION OF LIABILITY</h4>
+                                <ul type="square" class="ul_pad_left">
+                                    <li>You clearly understand and agree that the company shall under no circumstances (including,
+                                        without limitation, in contract, negligence or other tort), be liable for any direct,
+                                        indirect, ancillary, special, incidental, consequential or exemplary damages.</li>
+                                    <li>This includes, but is not limited to injury, claim, loss of data, loss of income, loss
+                                        of profit or loss of opportunity, loss of or damage to property, damages for monetary
+                                        loss, goodwill, use, data or other intangible loss (even if the company has been
+                                        advised of the possibility of such damages), resulting from or arising out of the
+                                        use of or the inability to use the service, even if we have been advised or become
+                                        aware of the possibility of such damages or loss or that such loss was fore seeable.
+                                        You agree to indemnify us against any claims in respect of any such matter.</li>
+                                </ul>
+                            </div>
+                            <div class="col-xs-12">
+                                <h4 class="text-center">GOVERNING LAW AND JURISDICTION</h4>
+                                <ul type="square" class="ul_pad_left">
+                                    <li>This Agreement shall in all respects be governed, interpreted by, and construed in accordance
+                                        with the laws of India. All disputes, differences, complaints etc., shall be subject
+                                        to Arbitration under the Indian Arbitration and Conciliation Act, 1996. The arbitrator
+                                        will be appointed by the company after due consent from the company and the user.
+                                        The place of arbitration shall be Bengaluru, Karnataka, India.</li>
+                                    <li>There could be instances where the company is not able to receive prompt updates about
+                                        the change in the applicable laws of your place of stay. Please ensure that any activities
+                                        you engage on the Website are legal as per the applicable laws. You agree to indemnify
+                                        and hold harmless the company or its website from any claim, demand, damage, or loss
+                                        whatsoever coming out due to your non-compliance with the laws of your jurisdiction.</li>
+                                </ul>
+                            </div>
+                            <div class="col-xs-12">
+                                <h4 class="text-center">CONTACT US</h4>
+                                <ul type="square" class="ul_pad_left">
+                                    <li>In case of any questions or assistance, feel free to contact us any time, In case of
+                                        any change in your personal information, please contact Customer Service. In case,
+                                        if you forget your password, or suspect that someone else has learned and used your
+                                        password please contact Customer Services. Also, in case of any clarification that
+                                        you may wish to seek regarding anything, please feel free to contact us through customer
+                                        services at support@pokabunga.com</li>
+                                </ul>
+                            </div>
+                            <div class="col-xs-12">
+                                <h4 class="text-center">ACCEPTING THE TERMS OF USE</h4>
+                                <ul type="square" class="ul_pad_left">
+                                    <li>You hereby accept the fact that you have read, understood and are willing to abide by
+                                        the above Terms and Conditions.</li>
+                                </ul>
+                            </div>
+                            <div class="col-xs-12">
+                                <h4 class="text-center">CHAT ETIQUETTES AND ABUSE</h4>
+                                <ul type="square" class="ul_pad_left">
+                                    <li>Pokabunga.com believes in giving its players a world-class gaming experience. Pokabunga’s
+                                        table chat feature is an important add-on towards this endeavour. Pokabunga, however,
+                                        does not believe in excessive censorship of the chat that takes place on its tables.
+                                        It is therefore, important that the players understand the etiquettes and rules of
+                                        the table chat.</li>
+                                    <li>Behavior falling in any of the below-mentioned categories may result in revocation of
+                                        chat privileges of the player, and in certain cases, disqualification of player account
+                                        from the website. Pokabunga reserves full and final authority in any such disciplinary
+                                        cases.</li>
+                                    <li>Soliciting business, discussing businesses other than Pokabunga.com</li>
+                                    <li>Discussing other poker/rummy websites/forums</li>
+                                    <li>Malicious content targeted at Pokabunga.com</li>
+                                    <li>Malicious content targeted at any player</li>
+                                    <li>Abusive language</li>
+                                    <li>Spam content</li>
+                                    <li>Solicitation of money</li>
+                                    <li>Sale of chips</li>
+                                    <li>Exchange of personal details</li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="modal fade" id="myModal_policy" role="dialog">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" style="color: #000;">×</button>
+                        <h4 class="modal-title"> Privacy &amp; Policy</h4>
+                    </div>
+                    <div class="modal-body" style="height:680px;overflow:auto;overflow-x:hidden;">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <ul type="square" class="ul_pad_left">
+                                    <li>This privacy policy forms a part of the Terms of Use. At PokaBunga.com, our attempt is
+                                        to offer you a safe, protected and reliable environment to play. PokaBunga.com respects
+                                        your privacy and thus assures you that any information provided by you to PokaBunga.com
+                                        is protected and will be dealt with according to this Policy. PokaBunga.com shall
+                                        not provide, distribute, trade, sell or rent your name, e-mail address or other personal
+                                        information provided on this site to any third party or information related to your
+                                        usage of the Website, except as provided in this Privacy Policy.</li>
+                                </ul>
+                            </div>
+                            <div class="col-xs-12">
+                                <h4 class="text-center">INFORMATION GATHERED</h4>
+                                <ul type="square" class="ul_pad_left">
+                                    <li>To avail the facilities offered on <span class="yellow">www.PokaBunga.com,</span> you
+                                        may have to provide certain information to us including your Username, Password and
+                                        a Valid Email address. Additionally, for those of you who wish to participate in
+                                        any of the paid tournaments / games / competitions organized by PokaBunga.com, the
+                                        information that is collected includes Name, Date of Birth, Telephone number, Postal/Contact
+                                        address, PAN number (as applicable).</li>
+                                    <li>When you visit www.PokaBunga.com, certain information may also be automatically collected
+                                        and stored, including the IP address of your computer, browser type and language,
+                                        the date and the time during which you accessed the site, the address of the website
+                                        which you may have used to link to www.PokaBunga.com. </li>
+                                    <li>When you visit www.PokaBunga.com, cookies may be left in your computer. A cookie is a
+                                        small text file that uniquely identifies your browser. The cookies assigned by the
+                                        servers of PokaBunga.com may be used to personalize your experience on www.PokaBunga.com.
+                                        Moreover, cookies may also be used for authentication, game management and security
+                                        purposes.</li>
+                                    <li>Cookies may also be assigned by the advertisers of PokaBunga.com when you click on any
+                                        of the advertisements which may be displayed on www.PokaBunga.com in which case such
+                                        cookies are controlled by these advertisers and not <span class="yellow">PokaBunga.com.</span></li>
+                                </ul>
+                            </div>
+                            <div class="col-xs-12">
+                                <h4 class="text-center">HOW 'POKABUNGA.COM' USES THE COLLECTED INFORMATION</h4>
+                                <ul type="square" class="ul_pad_left">
+                                    <li>When you register your email address with PokaBunga.com, you agree to receive email communication
+                                        from PokaBunga.com, entities specifically authorized by PokaBunga.com and other users.
+                                        You also agree and acknowledge that when you use our referral program for referring
+                                        someone, PokaBunga.com will send emails to that person on your behalf and the email
+                                        headers will carry your email address as the address from which such emails are sent.</li>
+                                    <li>PokaBunga.com may also use software applications for website traffic analysis and to
+                                        gather statistics, used for advertising and for determining the efficacy and popularity
+                                        of PokaBunga.com among others.</li>
+                                    <li>The data which is transmitted over the Internet is intrinsically exposed to security
+                                        risks or threats. For instance, information transmitted via chat or email can be
+                                        compromised and used by others. Therefore, PokaBunga.com cannot guarantee any security
+                                        for such information.</li>
+                                    <li>When you register with PokaBunga.com, your account is protected by means of login information
+                                        which includes a username and a password that is known only to you. Therefore, you
+                                        are responsible for maintaining the confidentiality of your login information including
+                                        your username and password.</li>
+                                    <li>PokaBunga.com is not responsible for any activity which is undertaken when your password
+                                        is used. We suggest you not to disclose your password to anyone. If you become aware
+                                        of or reasonably suspect any breach of security, including compromise of your login
+                                        information, it is your responsibility to immediately notify PokaBunga.com.</li>
+                                    <li>www.PokaBunga.com may contain links to other websites. Such websites are governed by
+                                        their own privacy policies and PokaBunga.com does not exercise any control over them.
+                                        It is your responsibility to read and understand the privacy policy of such websites
+                                        when you follow a link outside www.PokaBunga.com.</li>
+                                    <li>PokaBunga.com has a policy of not sharing any personally identifiable information with
+                                        anyone other than entities specifically authorized by PokaBunga.com which may include
+                                        advertisers and sponsors of PokaBunga.com. However, PokaBunga.com may use your name,
+                                        Login ID and the state from where you are participating when announcing the results
+                                        of any contests run on the Website. Such contests are further governed by the
+                                        <span
+                                            class="yellow"><a class="" href="" data-original-title="" title="">Terms and Conditions</a></span>
+                                            which shall be available on the website as and when such a contest is run on
+                                            the website.</li>
+                                    <li>PokaBunga.com conducts periodic analysis and survey of the traffic to PokaBunga.com for
+                                        market research and advertising purposes. PokaBunga.com reserves the right to share
+                                        your registration information with PokaBunga.com appointed market research and advertising
+                                        companies or firms from time to time for the said purposes. PokaBunga.com may also
+                                        use cumulative non-personal information for auditing and analysis purposes with the
+                                        aim of improving its services.</li>
+                                    <li>Additionally, PokaBunga.com may share personally identifiable information if sharing
+                                        of such information is necessary to comply with legal processes or governmental request,
+                                        or to enforce the Terms of Use and this Privacy Policy, or for prevention of fraud,
+                                        or for issues involving information security, or to protect your rights or the rights
+                                        of PokaBunga.com or the rights of the general public.</li>
+
+                                </ul>
+                            </div>
+                            <div class="col-xs-12">
+                                <h4 class="text-center">MERGERS AND OTHER EVENTS REQUIRING TRANSFER</h4>
+                                <ul type="square" class="ul_pad_left">
+                                    <li>If we should ever file for bankruptcy, or become insolvent, or be acquired by a third
+                                        party, merge with a third party, sell all or part of our assets, or transfer substantially
+                                        all or part of our relevant assets to a third party, We are entitled to share the
+                                        Personal Information and all other information You have provided through the Services
+                                        to potential and subsequent business and merger partners.</li>
+                                </ul>
+                            </div>
+                            <div class="col-xs-12">
+                                <h4 class="text-center">MERGERS AND OTHER EVENTS REQUIRING TRANSFER</h4>
+                                <ul type="square" class="ul_pad_left">
+                                    <li>If we should ever file for bankruptcy, or become insolvent, or be acquired by a third
+                                        party, merge with a third party, sell all or part of our assets, or transfer substantially
+                                        all or part of our relevant assets to a third party, We are entitled to share the
+                                        Personal Information and all other information You have provided through the Services
+                                        to potential and subsequent business and merger partners.</li>
+                                </ul>
+                            </div>
+                            <div class="col-xs-12">
+                                <h4 class="text-center">PROTECTION OF CHILDREN</h4>
+                                <ul type="square" class="ul_pad_left">
+                                    <li>The Services are not intended for or directed at persons under the age of eighteen (18).
+                                        Any person who informs us that his age is eighteen (18) years or above, it is our
+                                        policy to uncover the services which may require us to access and verify the person's
+                                        Personal Information. If we become aware that a minor has attempted to or has submitted
+                                        personal information via the Services, We will not accept this information and will
+                                        take steps to remove such information from our records in a secure manner.</li>
+                                </ul>
+                            </div>
+                            <div class="col-xs-12">
+                                <h4 class="text-center">CONSENT</h4>
+                                <ul type="square" class="ul_pad_left">
+                                    <li>By using our website, it is understood that you have given your consent to the collection
+                                        and use of this information by PokaBunga.com and its partners and affiliates.</li>
+                                    <li>In order to play real money games, you will be required to send money to and receive
+                                        money from us. We may use third-party electronic payment processors and/or financial
+                                        institutions ('ESPs') to process such financial transactions.</li>
+                                    <li>By accepting this Privacy Policy, You expressly consent to Personal Information necessary
+                                        for the processing of transactions being shared with ESPs. We take steps to ensure
+                                        that our arrangements with ESPs protect your privacy.</li>
+                                    <li>We reserve the right to conduct a security review at any time to validate your identity,
+                                        age, and registration data provided by you and to verify your use of the Services
+                                        and Your financial transactions for potential breach of Our Terms and Conditions
+                                        of Use and of applicable law.</li>
+                                </ul>
+                            </div>
+                            <div class="col-xs-12">
+                                <h4 class="text-center">CONSENT TO USE OF ANTI-CHEATING SOFTWARE</h4>
+                                <ul type="square" class="ul_pad_left">
+                                    <li>Our software package contains certain features designed to detect use of automated programs
+                                        that enable artificial (non-human) intelligence to play on our site. Use of such
+                                        'bot' software programs violates Our Terms and Conditions of Use, where we deem it
+                                        detrimental to other players. By installing our software and using the Services,
+                                        You consent to our software performing the functions described in this section. Our
+                                        software may perform any or all of the following functions in order to detect the
+                                        use of illicit automated programs and ensure that we maintain a 'cheat free' environment
+                                        for all users.</li>
+                                    <li>Scan your list of active software applications while you are using the services. Scan
+                                        your list of active processes while you are using the services; and Scan the files
+                                        in your services and site-related program folders to ensure that only 'non-hacked'
+                                        versions of our software are being used. If any of the foregoing processes reveals
+                                        a suspect application or process.</li>
+                                    <li>Our software may scan the files associated with the suspect application or process and
+                                        compile a composite mesh (i.e. a profile that characterizes the files associated
+                                        with the application or process) to be matched against profiles for known illicit
+                                        automated programs. Our software will not perform any random search of large portions
+                                        of your hard drive, equipment or files, and it will not transmit any information
+                                        to us or to any third party other than the information you provide to us.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer></footer>
